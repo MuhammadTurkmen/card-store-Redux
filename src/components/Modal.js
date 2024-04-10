@@ -24,7 +24,7 @@ const Modal = () => {
             type="button"
             className="btn clear-btn"
             onClick={() => {
-              dispatch(closeModal);
+              dispatch(closeModal());
             }}
           >
             cancel
