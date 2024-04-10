@@ -1,3 +1,4 @@
+import { ChevronDown, ChevronUp } from "../icons";
 import React from "react";
 
 export const CartItem = () => {
