@@ -4,7 +4,7 @@ import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
 import React from "react";
 
 const Navbar = () => {
-  const { amount } = useSelector((store) => store.cart);
+  const amount = useSelector((store) => store.cart.amount);
   return (
     <nav>
       <div className="nav-center">
