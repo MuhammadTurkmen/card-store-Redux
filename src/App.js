@@ -9,7 +9,9 @@ function App() {
   const { cartItems } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
 
-  useEffect(() => {}, [cartItems]);
+  useEffect(() => {
+    dispatch(calculateTotals());
+  }, [cartItems]);
 
   return (
     <main>
