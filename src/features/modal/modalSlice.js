@@ -11,5 +11,8 @@ const modalSlice = createSlice({
     openModal: (state, action) => {
       state.isOpen = true;
     },
+    closeModal: (state, action) => {
+      state.isOpen = false;
+    },
   },
 });
