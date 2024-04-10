@@ -16,6 +16,18 @@ function App() {
     dispatch(calculateTotals());
   }, [cartItems]);
 
+  useEffect(() => {
+    dispatch(getCartItems());
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="loading">
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+
   return (
     <main>
       {isOpen && <Modal />}
