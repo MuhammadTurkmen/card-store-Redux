@@ -6,7 +6,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav>
-      <div className="nav-center"></div>
+      <div className="nav-center">
+        <h1>redux toolkit</h1>
+      </div>
     </nav>
   );
 };
