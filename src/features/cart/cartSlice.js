@@ -18,10 +18,12 @@ export const getCartItems = createAsyncThunk(
     try {
       // console.log(name);
       // console.log(thunkAPI);
-      thunkAPI.dispatch(openModal);
+      thunkAPI.dispatch(openModal());
       const response = await axios(url);
       return response.data;
-    } catch (error) {}
+    } catch (error) {
+      return thunkAPI.rejectWithValue("something went wrong");
+    }
   }
 );
 
