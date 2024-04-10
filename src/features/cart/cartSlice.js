@@ -11,10 +11,11 @@ const initialState = {
   isLoading: true,
 };
 
-export const getCartItems = createAsyncThunk("car/getCartItems", () => {
-  return fetch(url)
-    .then((resp) => resp.json())
-    .catch((err) => console.log(err));
+export const getCartItems = createAsyncThunk("car/getCartItems", async () => {
+  try {
+    const response = await axios(url);
+    return response.data;
+  } catch (error) {}
 });
 
 const cartSlice = createSlice({
