@@ -26,6 +26,12 @@ const CartContainer = () => {
           return <CartItem key={item.id} {...item} />;
         })}
       </div>
+      <footer>
+        <hr />
+        <h4>
+          total <span>${total}</span>
+        </h4>
+      </footer>
     </section>
   );
 };
