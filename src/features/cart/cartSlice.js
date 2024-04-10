@@ -37,6 +37,10 @@ const cartSlice = createSlice({
         cartItem.amount = cartItem.amount - 1;
       }
     },
+    calculateTotals: (state) => {
+      let amount = 0;
+      let total = 0;
+    },
   },
 });
 
