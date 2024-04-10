@@ -12,4 +12,4 @@ const cartSlice = createSlice({
   initialState,
 });
 
-console.log(cartSlice);
+// console.log(cartSlice);
