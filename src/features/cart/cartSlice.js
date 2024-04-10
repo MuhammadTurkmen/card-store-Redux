@@ -19,7 +19,9 @@ const cartSlice = createSlice({
       const itemId = action.payload;
       state.cartItems = state.cartItems.filter((item) => item.id !== itemId);
     },
-    increase: (state, { payload }),
+    increase: (state, { payload }) => {
+      const cartItem = state.cartItems.find((itme) => item.id === payload.id);
+    },
   },
 });
 
