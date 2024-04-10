@@ -1,6 +1,6 @@
 import React from "react";
 import CartItem from "./CartItem";
-import { useSelector } from "react-redux/es/hooks/useSelector";
+import { useDispatch, useSelector } from "react-redux/es/hooks/useSelector";
 
 const CartContainer = () => {
   const { cartItems, total, amount } = useSelector((store) => store.cart);
