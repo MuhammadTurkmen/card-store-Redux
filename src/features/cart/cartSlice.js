@@ -10,6 +10,12 @@ const initialState = {
   isLoading: true,
 };
 
+export const getCartItems = createAsyncThunk("car/getCartItems", () => {
+  return fetch(url)
+    .then((resp) => resp.json())
+    .catch((err) => console.log(err));
+});
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
