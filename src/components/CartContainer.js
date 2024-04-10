@@ -3,6 +3,7 @@ import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux/es/hooks/useSelector";
 
 const CartContainer = () => {
+  const dispatch = useDispatch();
   const { cartItems, total, amount } = useSelector((store) => store.cart);
 
   if (amount < 1) {
