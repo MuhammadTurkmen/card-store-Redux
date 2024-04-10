@@ -30,7 +30,7 @@ export const CartItem = ({ id, img, title, price, amount }) => {
               dispatch(removeItem(id));
               return;
             }
-            dispatch(toggleItem({ id, value: "inc" }));
+            dispatch(toggleItem({ id, value: "dec" }));
           }}
         >
           <ChevronDown />
